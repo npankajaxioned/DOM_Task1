@@ -366,9 +366,9 @@ h3 {
 @media only screen and (max-width: 768px) {
   .wrapper {width: 90%;}
   .hamburger {display: block;}
-  .hamburger.activ .bar:nth-child(2) { opacity: 0;}
-  .hamburger.activ .bar:nth-child(1) { transform: translateY(8px) rotate(45deg);}
-  .hamburger.activ .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg);}
+  .hamburger.active .bar:nth-child(2) { opacity: 0;}
+  .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg);}
+  .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg);}
 
   .bar {
     width: 25px;
