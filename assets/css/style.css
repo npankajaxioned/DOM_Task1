@@ -40,9 +40,7 @@ input[type='radio'] { vertical-align: text-bottom; }
 label,
 input[type='button'],
 input[type='submit'],
-button {
-  cursor: pointer;
-}
+button { cursor: pointer; }
 
 strong {
   font-weight: bold;
@@ -96,22 +94,63 @@ li {
   display: inline-block;
   list-style-type: none;
 }
+/* Common styling */
+.grey { color: #666; }
+.cap { text-transform: capitalize; }
+.up { text-transform: uppercase; }
+.center { text-align: center; }
+.bold { font-weight: bold; }
+.transition { transition: 1s all ease; }
+body{ background-color:#1F1F1F ;}
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1350px;
+  width: 76%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper {
+  padding: 40px 0 36px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #282828;
+}
 
+.logo{ 
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 700;
+}
 
+.hamburger { display: none; }
+nav { flex-basis: 42.5%; }
 
+.nav-links {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.nav-links li a {
+  color: #909090;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
+.nav-links li a:hover{
+  padding-bottom: 12px;
+  border-bottom: 4px solid #8FD0A6;
+  color: #8FD0A6; 
+}
 
+.active-border {
+  padding-bottom: 12px;
+  border-bottom: 4px solid #8FD0A6;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -119,14 +158,37 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.tabs { padding-top: 28px; }
+.tabs .wrapper { border-bottom: 1px solid #282828; }
 
+.tab-buttons {
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.list a{
+  margin: 0 5px;
+  padding: 5px 10px;
+  color: #B2B2B2;
+  font-size: 12px;
+}
 
+.list.active a { color: #FFF;}
+.list.active { background-color: #8FD0A6; }
 
+.tab-buttons li a:hover {
+  background-color: #8FD0A6;
+  color: #FFF;
+}
 
+.tab-images {
+  padding-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-
-
+.tab-image { flex-basis: 25%; }
 /*=================================
   main styling ends here
 =================================*/
@@ -134,21 +196,149 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer { margin-top: 30px; } 
 
+h3 {
+  padding-bottom: 20px;
+  color: #C7C7C7;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
 
+.footer-main {
+  border-bottom: 1px solid #282828;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
+.footer-main p {
+  padding-bottom: 24px;
+  font-size: 11px;
+  color: #555;
+  line-height: 16px;
+}
 
+.recent li a{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #282828;
+  display: block;
+  color: #555;
+  font-size: 11px;
+  line-height: 16px;
+}
 
+.recent {
+  display: flex;
+  flex-direction: column;
+}
 
+.recent li:last-child a { border-bottom: none;}
+.recent li a:hover { color: #8FD0A6; }
 
+.popular-tags li a {
+  padding: 8px 10px;
+  margin: 0 2px 10px;
+  color: #FFF;
+  background-color: #8FD0A6;
+  font-size: 11px;
+}
+
+.popular-tags li a:hover {
+  background-color: #FFF;
+  color: #8FD0A6;
+  transition: .3s ease-in;
+}
+
+.popular-tags li a.coding { background-color: #C1C1C1; }
+
+.popular-tags li a.coding:hover {
+  background-color: #FFF;
+  color: #C1C1C1;
+}
+
+.flickr-gallery {
+  padding-bottom: 10px;
+  justify-content: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.flickr h3 { padding-left: 10%;}
+
+.text-widget,
+.recent-posts,
+.tags,
+.flickr {
+  flex: 1;
+}
+
+.footer-end {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-end p {
+  padding-top: 6px;
+  color: #555;
+  font-size: 10px;
+}
+
+.social-links a {
+  height: 20px;
+  width: 20px;
+  background-color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.bar,
+.google,
+.twitter,
+.pintrest,
+.xbox,
+.indeed,
+.facebook {
+  text-indent: -9999px;
+}
+
+.google::after { content: "\f0d5"; }
+.twitter::after { content: "\f099"; }
+.pintrest::after { content: "\f0d2"; }
+.xbox::after { content: "\f412"; }
+.indeed::after { content: "\f0e1"; }
+.facebook::after { content: "\f09a"; }
+
+.google::after,
+.twitter::after,
+.pintrest::after,
+.xbox::after,
+.indeed::after,
+.facebook::after  {
+  height: 100%;
+  width: 100%;
+  padding-top: 5px;
+  color: #858585;
+  font-family: "fontAwesome";
+  font-size: 10px;
+  float: right;
+  text-align: center;
+  text-indent: 0;
+}
+
+.google:hover::after, 
+.twitter:hover::after, 
+.pintrest:hover::after, 
+.xbox:hover::after, 
+.indeed:hover::after, 
+.facebook:hover::after{ 
+  background-color: #858585;
+  color: #FFF;
+  transition: .4s ease;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
