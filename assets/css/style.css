@@ -193,9 +193,7 @@ nav { flex-basis: 42.5%; }
   display: none;
 }
 
-.tab-images .image-active {
-  display: block;
-}
+.tab-images .image-active { display: block; }
 
 .tab-buttons .list-active{
   background-color: #8FD0A6;
