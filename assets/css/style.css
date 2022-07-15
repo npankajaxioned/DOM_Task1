@@ -249,10 +249,15 @@ h3 {
 
 .popular-tags li a {
   padding: 8px 10px;
-  margin: 0 2px 10px;
+  margin: 0 4px 10px;
   color: #FFF;
   background-color: #8FD0A6;
   font-size: 11px;
+}
+ul.popular-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .popular-tags li a:hover {
@@ -270,7 +275,7 @@ h3 {
 
 .flickr-gallery {
   padding-bottom: 10px;
-  justify-content: end;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -360,7 +365,10 @@ h3 {
 
 @media only screen and (max-width: 995px) {
   nav { flex-basis: 55%;}
-  .footer-main > div { flex-basis: 100%; }
+  .footer-main > div { 
+    flex-basis: 100%; 
+    text-align: center;
+  }
   .recent-posts { margin-left: 0; }
   .recent { text-align: center; }
   .flickr h3 { padding-left: 0;}
@@ -429,6 +437,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-left: 65%;
   }
 
   .tab-image { flex-basis: 50%; }
