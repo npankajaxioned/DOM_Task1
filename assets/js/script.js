@@ -26,10 +26,12 @@ function tabFilter() {
 
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("nav");
+const body = document.querySelector("body");
 
 hamburger.addEventListener("click",() => {
   hamburger.classList.toggle("active");
   nav.classList.toggle("active");
+  body.classList.toggle("scroll-disable");
 })
 
 /* Top button Js code */
