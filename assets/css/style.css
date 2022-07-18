@@ -414,10 +414,13 @@ ul.popular-tags {
   border-radius: 10px;
 }
 .top-button::before{
-  content: '\f353';
-  font-family: 'FontAwesome';
+  content: '\f062';
+  font-family: "fontAwesome";
   text-indent: 0;
   float: right;
+  height: 100%;
+  width: 100%;
+  
 }
  /*=================================
   footer styling ends here
