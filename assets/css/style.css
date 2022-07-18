@@ -422,6 +422,10 @@ ul.popular-tags {
   width: 100%;
   
 }
+.scroll-disable {
+  width: 100%;
+  position: fixed;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
