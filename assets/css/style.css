@@ -222,7 +222,10 @@ nav { -ms-flex-preferred-size: 42.5%; flex-basis: 42.5%; }
 /*=================================
   footer styling starts here
 =================================*/ 
-footer { margin-top: 30px; } 
+footer { 
+  margin-top: 30px; 
+  position: relative;
+} 
 
 h3 {
   padding-bottom: 20px;
@@ -397,6 +400,21 @@ ul.popular-tags {
   -webkit-transition: .4s ease;
   -o-transition: .4s ease;
   transition: .4s ease;
+}
+.top-button{
+  padding: 10px;
+  text-indent: -9999px;
+  background-color: #8FD0A6;
+  position:absolute;
+  right: 6%;
+  bottom: 14px;
+  border-radius: 10px;
+}
+.top-button::before{
+  content: '\f353';
+  font-family: 'FontAwesome';
+  text-indent: 0;
+  float: right;
 }
  /*=================================
   footer styling ends here
