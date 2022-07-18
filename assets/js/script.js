@@ -35,7 +35,10 @@ hamburger.addEventListener("click",() => {
 /* Top button Js code */
 
 var mybutton = document.getElementById("button");
-window.onscroll = function(){
+window.onscroll = function()
+{scrollFunction()};
+
+ function scrollFunction(){
   if (document.body.scroll > 100 || document.documentElement.scrollTop > 100){
     mybutton.style.display = "block"
   }
