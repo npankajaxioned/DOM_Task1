@@ -208,6 +208,9 @@ nav { -ms-flex-preferred-size: 42.5%; flex-basis: 42.5%; }
       flex-basis: 25%;
   display: none;
 }
+.tab-image img {
+  min-width: 200px;
+}
 
 .tab-images .image-active { display: block; }
 
