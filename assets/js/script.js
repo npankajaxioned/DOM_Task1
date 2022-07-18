@@ -32,6 +32,17 @@ hamburger.addEventListener("click",() => {
   nav.classList.toggle("active");
 })
 
+/* Top button Js code */
+
+var mybutton = document.getElementById("button");
+window.onscroll = function(){
+  if (document.body.scroll > 100 || document.documentElement.scrollTop > 100){
+    mybutton.style.display = "block"
+  }
+  else {
+    mybutton.style.display = "none";
+  }
+}
 
 
 
